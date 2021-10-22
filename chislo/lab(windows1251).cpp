@@ -60,7 +60,7 @@ int main() {
     
     cout << endl << endl <<"Самое большое число:";
 
-    if (a>b && a>>c) {
+    if (a>b && a>c) {
         if (b>c) cout << " " << a << b << c;
         else cout << " " << a << c << b;
     }

@@ -43,7 +43,7 @@ int main() {
         cout << " " << c << a << b << ",";
         cout << " " << c << b << a << ".";
     }
-    if (b == 0) {
+    else if (b == 0) {
         cout << " " << a << b << c << ",";
         cout << " " << a << c << b << ",";
         cout << " " << c << a << b << ",";

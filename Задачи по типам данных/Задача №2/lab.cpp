@@ -56,6 +56,10 @@ int main() {
     if (e<b) {
         resm = (e+60)-b;
         resh--;
+        if (resh<0) {
+            resh = 23;
+        }
+        else;
     }
     else resm = e-b;
     if (f<c) {
@@ -64,6 +68,10 @@ int main() {
         if (resm<0) {
             resm = 59;
             resh--;
+            if (resh<0) {
+                resh = 23;
+            }
+            else;
         }
         else;
     }

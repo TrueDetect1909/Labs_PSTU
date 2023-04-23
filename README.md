@@ -1,1 +1,1 @@
-# Labs_PSTU
+# Labs_PSTU 3 вариант

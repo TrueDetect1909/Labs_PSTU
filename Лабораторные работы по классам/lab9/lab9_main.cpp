@@ -8,14 +8,14 @@ int main() {
         v[0] = 1;
         v[1] = 2;
         v[2] = 3;
-
+        std::cin >> A ;
         // добавляем элемент в конец
-        v.push_back(4);
-
+        v++;
+        std::cin >> B ;
         // добавляем элемент в начало
-        v.push_front(0);
+        ++v;
 
-        for (size_t i = 0; i < v.m_size; ++i) {
+        for (size_t i = 0; i < v.size(); ++i) {
             std::cout << v[i] << " ";
         }
         std::cout << "\n";

@@ -1,9 +1,9 @@
 #include <stdexcept>
 #include <cstring>
-
+int A, B;
 class Vector {
 public:
-    size_t m_size;
+    
     Vector();
     Vector(size_t size);
     Vector(const Vector& other);
@@ -12,13 +12,16 @@ public:
 
     int& operator[](size_t index);
     const int& operator[](size_t index) const;
-
+    size_t size() {
+        return m_size;
+    };
     void push_back(int value);
     void push_front(int value);
-
+    Vector& operator++(); // prefix ++ 
+    Vector operator++(int); // postfix ++
 private:
     int* m_data;
-    
+    size_t m_size;
     size_t m_capacity;
 
     void reserve(size_t new_capacity);
@@ -80,7 +83,16 @@ void Vector::push_front(int value) {
     m_data[0] = value;
     ++m_size;
 }
-
+Vector& Vector::operator++() { // prefix ++
+    push_front(B);
+    return *this;
+}
+ 
+Vector Vector::operator++(int) { // postfix ++
+    Vector temp(*this);
+    push_back(A);
+    return temp;
+}
 void Vector::reserve(size_t new_capacity) {
     if (new_capacity > m_capacity) {
         int* new_data = new int[new_capacity];

@@ -27,5 +27,5 @@ public:
     {
         return first * second;
     }
-    virtual ~Pair() {} // добавляем виртуальный деструктор
+    virtual ~Pair() {}    
 };

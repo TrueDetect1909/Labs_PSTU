@@ -1,1 +1,1 @@
-# Labs_PSTU 3 вариант
+# Labs_PSTU 3 Variant

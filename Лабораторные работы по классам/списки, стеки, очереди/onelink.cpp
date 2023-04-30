@@ -94,13 +94,13 @@ int main() {
     list.addNode('a');
     list.addNode('b');
     list.addNode('c');
-    list.printList(); // выведет: a b c
+    list.printList();  
 
     list.insertMultipleAfter('b', {'x', 'y', 'z'});
-    list.printList(); // выведет: a b x y z c
+    list.printList();  
 
     list.deleteNode('x');
-    list.printList(); // выведет: a b y z c
+    list.printList(); 
     system("pause");
     return 0;
 }

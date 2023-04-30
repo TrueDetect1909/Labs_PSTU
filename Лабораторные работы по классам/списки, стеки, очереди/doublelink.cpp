@@ -120,11 +120,11 @@ int main()
     list.addNode('a');
     list.addNode('b');
     list.addNode('c');
-    list.printList(); // выведет: a b c
+    list.printList(); 
     list.removeNode('b');
-    list.printList(); // выведет: a c
+    list.printList(); 
     list.addNodesAfter('a', "xy");
-    list.printList(); // выведет: a x y c
+    list.printList(); 
     system("pause");
     return 0;
 }

@@ -26,10 +26,10 @@ public:
     int get_sec() { return sec; }
     void set_min(int m) { min = m; }
     void set_sec(int s) { sec = s; }
-    // перегруженные операции
+      
     Time &operator=(const Time &);
     Time &operator++();
-    Time operator++(int); // постфиксная операция
+    Time operator++(int);   
     Time operator+(const Time& other) const {
         int totalsec = sec + other.sec;
         int addmin = totalsec / 60;
@@ -38,20 +38,19 @@ public:
         return Time(totalmin, totalsec);
     }
     Time operator-(const Time &);
-    // глобальные функции ввода-вывода
     friend istream &operator>>(istream &in, Time &t);
     friend ostream &operator<<(ostream &out, const Time &t);
 };
 Time &Time::operator=(const Time &t)
 {
-    // проверка на самоприсваивание
+       
     if (&t == this)
         return *this;
     min = t.min;
     sec = t.sec;
     return *this;
 }
-// перегрузка префиксной операции инкремент
+    
 Time &Time::operator++()
 {
     int temp = min * 60 + sec;
@@ -60,7 +59,7 @@ Time &Time::operator++()
     sec = temp % 60;
     return *this;
 }
-// перегрузка постфиксной операции инкремент
+    
 Time Time::operator++(int)
 {
     int temp = min * 60 + sec;
@@ -70,7 +69,7 @@ Time Time::operator++(int)
     sec = temp % 60;
     return t;
 }
-// перегрузка бинарной операции сложения
+    
 
 Time Time::operator-(const Time &t)
 {
@@ -81,7 +80,6 @@ Time Time::operator-(const Time &t)
     p.sec = (temp1 - temp2) % 60;
     return p;
 }
-// перегрузка глобальной функции-операции ввода
 istream &operator>>(istream &in, Time &t)
 {
     cout << "min?";
@@ -90,7 +88,6 @@ istream &operator>>(istream &in, Time &t)
     in >> t.sec;
     return in;
 }
-// перегрузка глобальной функции-операции вывода
 ostream &operator<<(ostream &out, const Time &t)
 {
 

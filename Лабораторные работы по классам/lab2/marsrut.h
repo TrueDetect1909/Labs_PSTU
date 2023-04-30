@@ -3,21 +3,21 @@
 using namespace std;
 class marsrut
 {
-    // атрибуты
+
     string firstplace;
     string secondplace;
     float rasstoyanie;
 
 public:
-    marsrut();                       // конструктор без параметров
-    marsrut(string, string, float);    // конструктор с параметрами
-    marsrut(const marsrut &);          // конструктор копирования
-    ~marsrut();                      // деструктор
-    string get_firstplace();     // селектор
-    void set_firstplace(string); // модификатор
-    string get_secondplace();         // селектор
-    void set_secondplace(string);     // модификатор
-    float get_rasstoyanie();         // селектор
-    void set_rasstoyanie(float);     // модификатор
-    void show();                   // просмотр атрибутов
+    marsrut();                       
+    marsrut(string, string, float);    
+    marsrut(const marsrut&);          
+    ~marsrut();                      
+    string get_firstplace();     
+    void set_firstplace(string); 
+    string get_secondplace();         
+    void set_secondplace(string);     
+    float get_rasstoyanie();         
+    void set_rasstoyanie(float);     
+    void show();                   
 };

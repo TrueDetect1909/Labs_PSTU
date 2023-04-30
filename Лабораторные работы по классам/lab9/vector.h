@@ -17,8 +17,8 @@ public:
     };
     void push_back(int value);
     void push_front(int value);
-    Vector& operator++(); // prefix ++ 
-    Vector operator++(int); // postfix ++
+    Vector& operator++();
+    Vector operator++(int);
 private:
     int* m_data;
     size_t m_size;
@@ -83,12 +83,12 @@ void Vector::push_front(int value) {
     m_data[0] = value;
     ++m_size;
 }
-Vector& Vector::operator++() { // prefix ++
+Vector& Vector::operator++() {  
     push_front(B);
     return *this;
 }
  
-Vector Vector::operator++(int) { // postfix ++
+Vector Vector::operator++(int) { 
     Vector temp(*this);
     push_back(A);
     return temp;

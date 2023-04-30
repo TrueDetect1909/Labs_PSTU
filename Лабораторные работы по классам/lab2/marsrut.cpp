@@ -8,7 +8,7 @@ marsrut::marsrut()
     rasstoyanie = 0;
     cout << "Constructor bez parametrov dlia objecta" << this << endl;
 }
-// конструктор с параметрами
+
 marsrut::marsrut(string N, string K, float S)
 {
     firstplace = N;
@@ -16,8 +16,8 @@ marsrut::marsrut(string N, string K, float S)
     rasstoyanie = S;
     cout << "Constructor s parametrami dlia objecta" << this << endl;
 }
-// конструктор копирования
-marsrut::marsrut(const marsrut &t)
+
+marsrut::marsrut(const marsrut& t)
 {
     firstplace = t.firstplace;
     secondplace = t.secondplace;
@@ -25,12 +25,12 @@ marsrut::marsrut(const marsrut &t)
 
     cout << "Constructor copirovania dlia objecta" << this << endl;
 }
-// деструктор
+
 marsrut::~marsrut()
 {
     cout << "Destructor dlia objecta" << this << endl;
 }
-// селекторы
+
 string marsrut::get_firstplace()
 {
     return firstplace;
@@ -43,7 +43,7 @@ float marsrut::get_rasstoyanie()
 {
     return rasstoyanie;
 }
-// модификаторы
+
 void marsrut::set_firstplace(string N)
 {
     firstplace = N;
@@ -56,7 +56,7 @@ void marsrut::set_rasstoyanie(float S)
 {
     rasstoyanie = S;
 }
-// метод для просмотра атрибутов
+
 void marsrut::show()
 {
     cout << "firstplace :" << firstplace << endl;

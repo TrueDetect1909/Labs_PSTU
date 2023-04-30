@@ -1,5 +1,5 @@
 #include <vector>
-class VectorIterator; // объ€вление класса-итератора
+class VectorIterator;   
 
 class Vector {
 public:

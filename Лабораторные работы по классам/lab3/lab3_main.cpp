@@ -1,17 +1,14 @@
 #include "Time.h"
 #include <iostream>
 using namespace std;
-// перегрузка операции присваивания
 Time &Time::operator=(const Time &t)
 {
-    // проверка на самоприсваивание
     if (&t == this)
         return *this;
     min = t.min;
     sec = t.sec;
     return *this;
-}
-// перегрузка префиксной операции инкремент
+}   
 Time &Time::operator++()
 {
     int temp = min * 60 + sec;
@@ -20,7 +17,7 @@ Time &Time::operator++()
     sec = temp % 60;
     return *this;
 }
-// перегрузка постфиксной операции инкремент
+    
 Time Time::operator++(int)
 {
     int temp = min * 60 + sec;
@@ -30,7 +27,6 @@ Time Time::operator++(int)
     sec = temp % 60;
     return t;
 }
-// перегрузка бинарной операции сложения
 Time Time::operator+(const Time &t)
 {
     int temp1 = min * 60 + sec;
@@ -49,7 +45,7 @@ Time Time::operator-(const Time &t)
     p.sec = (temp1 - temp2) % 60;
     return p;
 }
-// перегрузка глобальной функции-операции ввода
+
 istream &operator>>(istream &in, Time &t)
 {
     cout << "min?";
@@ -58,7 +54,6 @@ istream &operator>>(istream &in, Time &t)
     in >> t.sec;
     return in;
 }
-// перегрузка глобальной функции-операции вывода
 ostream &operator<<(ostream &out, const Time &t)
 {
 
@@ -66,19 +61,19 @@ ostream &operator<<(ostream &out, const Time &t)
 }
 int main()
 {
-    Time a;                    // конструктор без параметров
-    Time b;                    // конструктор без параметров
+    Time a;                       
+    Time b;                       
     Time c;
-    Time timer;                    // конструктор без параметров
-    cin >> a;                  // ввод переменной
-    cin >> b;                  // ввод переменной
-    cin >> timer;                       // префиксная операция инкремент
+    Time timer;                       
+    cin >> a;                    
+    cin >> b;                    
+    cin >> timer;                          
     a = a + timer;
-    b = b - timer;         // вывод переменной
-    c = a + b;             // сложение и постфиксная операция инкремент
-    cout << "a=" << a << endl; // вывод переменной
-    cout << "b=" << b << endl; // вывод переменной
-    cout << "c=" << c << endl; // вывод переменной
+    b = b - timer;           
+    c = a + b;                  
+    cout << "a=" << a << endl;   
+    cout << "b=" << b << endl;   
+    cout << "c=" << c << endl;   
     system("pause");
     return 0;
 }

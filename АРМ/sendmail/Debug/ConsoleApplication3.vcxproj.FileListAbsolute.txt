@@ -1,0 +1,4 @@
+C:\Users\TrueDetective\Desktop\labs\ConsoleApplication3\Debug\ConsoleApplication3.vcxproj.CopyComplete
+C:\Users\TrueDetective\Desktop\labs\ConsoleApplication3\Debug\ConsoleApplication3.exe
+C:\Users\TrueDetective\Desktop\labs\ConsoleApplication3\Debug\libcurl-d.dll
+C:\Users\TrueDetective\Desktop\labs\ConsoleApplication3\Debug\zlibd1.dll

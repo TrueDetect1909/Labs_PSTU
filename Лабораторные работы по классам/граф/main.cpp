@@ -350,11 +350,7 @@ int main() {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_FONT_INFOEX fontInfo = { sizeof(fontInfo) };
     GetCurrentConsoleFontEx(hConsole, FALSE, &fontInfo);
-
-    // ָחלוםÿול נאחלונ רנטפעא
     fontInfo.dwFontSize.Y = 24;
-
-    // ָחלוםÿול טלÿ רנטפעא
     wcscpy_s(fontInfo.FaceName, L"Bahnschrift");
 
     SetCurrentConsoleFontEx(hConsole, FALSE, &fontInfo);

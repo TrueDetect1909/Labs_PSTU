@@ -1,0 +1,32 @@
+﻿  main.cpp
+C:\Users\TrueDetective\Desktop\labs\graf\main.cpp(238,82): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\graf\main.cpp(238,63): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\graf\main.cpp(290,110): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\graf\main.cpp(290,89): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\graf\main.cpp(291,108): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\graf\main.cpp(291,87): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  graf.vcxproj -> C:\Users\TrueDetective\Desktop\labs\graf\Debug\graf.exe

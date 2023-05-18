@@ -1,0 +1,84 @@
+﻿  main.cpp
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(161,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(161,22): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(170,47): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(170,39): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(171,52): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(171,44): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(178,47): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(178,39): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(179,52): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(179,44): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(187,47): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(187,39): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(188,52): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(188,44): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(194,47): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(194,39): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(195,52): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\TrueDetective\Desktop\labs\groot\main.cpp(195,44): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  groot.vcxproj -> C:\Users\TrueDetective\Desktop\labs\groot\Debug\groot.exe

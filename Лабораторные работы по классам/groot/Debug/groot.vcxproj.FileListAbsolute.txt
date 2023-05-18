@@ -1,0 +1,11 @@
+C:\Users\TrueDetective\Desktop\labs\groot\Debug\groot.vcxproj.CopyComplete
+C:\Users\TrueDetective\Desktop\labs\groot\Debug\groot.exe
+C:\Users\TrueDetective\Desktop\labs\groot\Debug\sfml-graphics-d-2.dll
+C:\Users\TrueDetective\Desktop\labs\groot\Debug\sfml-window-d-2.dll
+C:\Users\TrueDetective\Desktop\labs\groot\Debug\sfml-system-d-2.dll
+C:\Users\TrueDetective\Desktop\labs\groot\Debug\freetyped.dll
+C:\Users\TrueDetective\Desktop\labs\groot\Debug\zlibd1.dll
+C:\Users\TrueDetective\Desktop\labs\groot\Debug\bz2d.dll
+C:\Users\TrueDetective\Desktop\labs\groot\Debug\libpng16d.dll
+C:\Users\TrueDetective\Desktop\labs\groot\Debug\brotlidec.dll
+C:\Users\TrueDetective\Desktop\labs\groot\Debug\brotlicommon.dll

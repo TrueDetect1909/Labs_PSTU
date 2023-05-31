@@ -1,92 +1,61 @@
 #include <iostream>
-#include <queue>
-#include <map>
+#include <set>
 #include <algorithm>
+using namespace std;
 
-template<typename T>
-class Vector {
-private:
-    std::queue<T> container;
-public:
-    void fillContainer(const std::map<T, int>& elements) {
-        for (auto& element : elements) {
-            for (int i = 0; i < element.second; ++i) {
-                container.push(element.first);
-            }
-        }
-    }
+multiset<double> mySet;
 
-    void addElement(const T& key, int position) {
-        std::queue<T> tempContainer;
-        int currentPosition = 0;
-        while (!container.empty()) {
-            if (currentPosition == position) {
-                tempContainer.push(key);
-            }
-            tempContainer.push(container.front());
-            container.pop();
-            ++currentPosition;
-        }
-        if (currentPosition == position) {
-            tempContainer.push(key);
-        }
-        container = tempContainer;
-    }
+void fillSet() {
+    mySet.insert(1.2);
+    mySet.insert(3.4);
+    mySet.insert(5.6);
+    mySet.insert(7.8);
+}
 
-    void removeElement(const T& key) {
-        std::queue<T> tempContainer;
-        while (!container.empty()) {
-            if (container.front() != key) {
-                tempContainer.push(container.front());
-            }
-            container.pop();
-        }
-        container = tempContainer;
+void addElement(double key, int position) {
+    auto it = mySet.find(key);
+    if (it != mySet.end()) {
+        advance(it, position);
+        mySet.insert(it, key);
     }
+}
 
-    void subtractMinMax() {
-        if (container.empty()) {
-            return;
-        }
-        T minElement = container.front();
-        T maxElement = container.front();
-        std::queue<T> tempContainer;
-        while (!container.empty()) {
-            minElement = std::min(minElement, container.front());
-            maxElement = std::max(maxElement, container.front());
-            container.pop();
-        }
-        int difference = maxElement - minElement;
-        while (!tempContainer.empty()) {
-            tempContainer.pop();
-        }
-        while (!container.empty()) {
-            tempContainer.push(container.front() - difference);
-            container.pop();
-        }
-        container = tempContainer;
-    }
+void removeElement(double key) {
+    mySet.erase(key);
+}
 
-    void printContainer() {
-        std::queue<T> tempContainer = container;
-        while (!tempContainer.empty()) {
-            std::cout << tempContainer.front() << " ";
-            tempContainer.pop();
-        }
-        std::cout << std::endl;
+void subtractMinMax() {
+    double min = *mySet.begin();
+    double max = *mySet.rbegin();
+    double diff = max - min;
+    multiset<double> updatedSet;
+    for (auto& elem : mySet) {
+        updatedSet.insert(elem + diff);
     }
-};
+    mySet = updatedSet;
+
+}
 
 int main() {
-    Vector<int> vector;
-    std::map<int, int> elements = { {1, 2}, {2, 3}, {3, 1}, {4, 4} };
-    vector.fillContainer(elements);
-    vector.printContainer();
-    vector.addElement(5, 3);
-    vector.printContainer();
-    vector.removeElement(2);
-    vector.printContainer();
-    vector.subtractMinMax();
-    vector.printContainer();
+    fillSet();
+    for (auto& elem : mySet) {
+        cout << elem << " ";
+    }
+    cout << endl;
+    addElement(3.4, 2);
+    for (auto& elem : mySet) {
+        cout << elem << " ";
+    }
+    cout << endl;
+    removeElement(5.6);
+    for (auto& elem : mySet) {
+        cout << elem << " ";
+    }
+    cout << endl;
+    subtractMinMax();
+    for (auto& elem : mySet) {
+        cout << elem << " ";
+    }
+    cout << endl;
     return 0;
 }
